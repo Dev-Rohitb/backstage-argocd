@@ -6,6 +6,6 @@ metadata:
  annotations:
    argocd/app-name: "my-kubernetes-argocd-component"  # Name of the ArgoCD application
 spec:
- type: service
- lifecycle: dev
- owner: rohit
+  type: service
+  lifecycle: production
+  owner: backstage
