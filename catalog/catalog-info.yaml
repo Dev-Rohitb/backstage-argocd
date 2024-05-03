@@ -1,0 +1,12 @@
+apiVersion:
+backstage.io/v1alpha1
+kind: Component
+metadata:
+ name: backstage-argocd-application
+ description: "An example application deployed with ArgoCD"
+ annotations:
+   argocd/app-name: "my-kubernetes-component, grafana, nginx, solar-system"  # Name of the ArgoCD application
+spec:
+ type: service
+ lifecycle: dev
+ owner: rohit
