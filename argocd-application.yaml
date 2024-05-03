@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/Dev-Rohitb/gitops-argocd-advanced-demo.git
+    repoURL: https://github.com/Dev-Rohitb/Gitops-Argo_Adventures.git
     targetRevision: HEAD
     path: ./app-of-apps/manifests/Solar_system
    
