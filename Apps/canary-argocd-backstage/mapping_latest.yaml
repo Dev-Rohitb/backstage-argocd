@@ -1,0 +1,36 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: summer-k8s-mapping
+spec:
+  hostname: "*"
+  prefix: /demo/
+  service: summer-k8s-service-stable
+  docs:
+    path: "/.ambassador-internal/openapi-docs"
+
+---
+
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: summer-k8s-mapping-stable
+spec:
+  hostname: "*"
+  prefix: /stable/
+  service: summer-k8s-service-stable
+  docs:
+    path: "/.ambassador-internal/openapi-docs"
+
+
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: summer-k8s-mapping-unstable
+spec:
+  hostname: "*"
+  prefix: /unstable/
+  service: summer-k8s-service-canary
+  docs:
+    path: "/.ambassador-internal/openapi-docs"
