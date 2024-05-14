@@ -13,14 +13,14 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/Dev-Rohitb/backstage-argocd.git
+    repoURL: https://github.com/Dev-Rohitb/Gitops-Argo_Adventures.git
     targetRevision: HEAD
-    path: ./Apps/canary-argocd-backstage
+    path: ./app-of-apps/manifests/Solar_system
    
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: solar-system
 
   # Sync policy
   syncPolicy:
