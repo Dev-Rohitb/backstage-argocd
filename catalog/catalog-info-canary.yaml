@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+ name: backstage-argocd-application-canary
+ description: "An example application deployed with ArgoCD canary Deployment"
+ annotations:
+   argocd/app-name: "my-kubernetes-argocd-component-canary"  # Name of the ArgoCD application
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
