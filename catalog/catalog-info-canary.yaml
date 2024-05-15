@@ -4,6 +4,7 @@ metadata:
  name: backstage-argocd-application-canary
  description: "An example application deployed with ArgoCD canary Deployment"
  annotations:
+   backstage.io/kubernetes-id: "my-kubernetes-argocd-component-canary"
    argocd/app-name: "my-kubernetes-argocd-component-canary"  # Name of the ArgoCD application
 spec:
   type: service
