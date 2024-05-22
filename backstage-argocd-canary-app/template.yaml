@@ -1,16 +1,16 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: kubernetes-githubactions-argocd-template
-  title: GitHub Actions & Kubernetes ArgoCD Template
+  name: k8s-githubactions-argocd-template
+  title: GitHub Actions K8s ArgoCD Template
   description: Create an app with GitHub Actions as CI and ArgoCD
   tags:
     - recommended
 spec:
-  owner: rohit.borkar@yash.com
-  type: web-app
+  owner: web@example.com
+  type: website
   parameters:
-    - title: Provide some simple information
+    - title: Provide Application's information
       required:
         - component_id
         - owner
