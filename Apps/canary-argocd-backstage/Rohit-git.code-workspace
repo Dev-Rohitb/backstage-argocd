@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "backstage-argocd",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
