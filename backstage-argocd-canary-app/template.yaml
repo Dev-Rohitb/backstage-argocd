@@ -10,7 +10,7 @@ spec:
   owner: backstage
   type: website
   parameters:
-    - title: Provide some simple information
+    - title: Provide Application's information
       required:
         - component_id
         - owner
